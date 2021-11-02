@@ -1,10 +1,4 @@
+import Shopify from './shopify';
+import Woocommerce from './woocomerce';
 
-import { Shopify } from "./shopify";
-import { Woocommerce } from "./woocomerce";
-
-const Orders = [
-    ...Shopify,
-    ...Woocommerce
-]
-
-export { Orders };
+export default [...Shopify, ...Woocommerce];
